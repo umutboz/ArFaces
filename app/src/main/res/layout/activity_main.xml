@@ -5,11 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
+    <!-- android:name="com.google.ar.sceneform.ux.ArFragment" -->
     <fragment
         android:name="com.uboz.arfaces.FaceArFragment"
         android:id="@+id/fragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        tools:layout="@layout/activity_main"/>
 
 </FrameLayout>
