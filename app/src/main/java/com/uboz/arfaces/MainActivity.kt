@@ -51,7 +51,11 @@ class MainActivity : AppCompatActivity(){
                 }
             }
 
+
             arFragment.arSceneView.cameraStreamRenderPriority = Renderable.RENDER_PRIORITY_FIRST
+
+
+
             arFragment.arSceneView.scene.addOnUpdateListener {
                 /*if(faceRenderable != null && faceTexture != null) {
                     addTrackedFaces()
@@ -76,6 +80,7 @@ class MainActivity : AppCompatActivity(){
                 this.selectedModel = selectedModel
                 isAnimatingFinish = true
             }
+
         }
         private fun addTrackedFaces() {
             val scene = arFragment.arSceneView.scene

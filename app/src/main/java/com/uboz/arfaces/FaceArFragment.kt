@@ -37,6 +37,7 @@ class FaceArFragment : ArFragment() {
     override fun getSessionConfiguration(session: Session?): Config {
         val config = Config(session)
         config.augmentedFaceMode = Config.AugmentedFaceMode.MESH3D
+        config.planeFindingMode = Config.PlaneFindingMode.DISABLED
         this.onReadySession?.invoke(session)
         return config
     }
